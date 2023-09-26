@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap');
+:root {
+  --primaryBlack: #212529;
+  --secondaryBlack: #343A40;
+  --third: #F8F9FA;
+}
+
+* {
+  font-family: 'DM Sans', sans-serif;
+}
+
+main {
+  background: var(--third);
+}
+
+main header {
+  width: 100%;
+  height: 80px;
+  padding: 0 3.5rem;
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+main #jumbotron {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+main #jumbotron::before,
+main #jumbotron::after {
+  content: '';
+  display: block;
+  border-left: 3px solid #000;
+  height: 30%;
+  position: absolute;
+  left: 30px;
+}
+
+main #jumbotron::after {
+  bottom: 0;
+}
+
+
+main #jumbotron .desc-jumbotron {
+  padding: 0 2.5rem;
+  color: var(--secondaryBlack);
+  font-size: 32px;
+}
+
+main #content-1 {
+  position: relative;
+}
+
+main #content-1 {
+  width: 100%; height: 90vh;
+}
+
+main #content-1::before {
+  content: '';
+  display: block;
+  border-left: 3px solid #000;
+  height: 5%;
+  position: absolute;
+  left: 30px;
+}
+
+main #content-1 .lh {
+  border-bottom: 3px solid #000;
+  width: 50%;
+  position: absolute;
+  left: 30px;
+  top: 5%;
+}
+
+main #content-1 .lh::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  background: #000; display: block;
+  position: absolute;
+  right: 0;
+  top: -15px;
+}
+
+main #content-1 .lv {
+  border-left: 3px solid #000;
+  height: 50%;
+  position: absolute;
+  left: 51%;
+  top: 5%;
+}
+
+main #content-1 .lv::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  background: #000; display: block;
+  position: absolute;
+ right: -15px;
+  bottom: 0;
+}
+
+main #content-1 .lh-2 {
+  border-left: 3px solid #000;
+  height: 50%;
+  position: absolute;
+  left: 51%;
+  top: 53%;
+}
+
+/* main #content-1 .lh-2::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  background: #000; display: block;
+  position: absolute;
+  left: 0;
+  top: -15px;
+} */
+
+main #content-1 .text-content {
+  width: 45%;
+  position: absolute;
+  right: 0;
+  font-size: 32px;
+}
+
+main #content-1 .text-content-2 {
+  width: 45%;
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  font-size: 32px;
+}
+
+.btn-contact {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  background: var(--primaryBlack);
+  color: #fff;
+}
+
+@media (max-width: 678px) {
+  main  header {
+    padding: 0 2.5rem;
+  }
+  
+  main #jumbotron::before,
+  main #jumbotron::after {
+    left: 25px;
+  }
+  
+  main #jumbotron .desc-jumbotron {
+    padding: 0 1.7rem;
+    font-size: 18px;
+  }
+  
+  main #content-1::before {
+    left: 25px;
+    
+  }
+  
+  main #content-1 .lh {
+    left: 25px;
+  }
+  
+  main #content-1 .lh {
+    width: 45%;
+  }
+  
+  main #content-1 .lh::after {
+    right: -10px;
+  }
+  
+  main #content-1 .text-content {
+    font-size: 18px;
+    padding: 0 0.3rem;
+  }
+  
+  main #content-1 .text-content-2 {
+    left: 20px;
+    font-size: 18px;
+  }
+  
+}
